@@ -44,19 +44,6 @@ class _DigerFormElemanlariState extends State<DigerFormElemanlari> {
               height: 20,
             ),
             RadioListTile<String>(
-              value: 'Samsun',
-              groupValue: sehir,
-              onChanged: (deger) {
-                setState(() {
-                  sehir = deger!;
-                  debugPrint("Seçilen değer : $deger");
-                });
-              },
-              title: const Text("Ankara"),
-              subtitle: const Text("Radio Subtitle"),
-              secondary: const Icon(Icons.map),
-            ),
-            RadioListTile<String>(
               value: 'Osmaniye',
               groupValue: sehir,
               onChanged: (deger) {
@@ -79,6 +66,19 @@ class _DigerFormElemanlariState extends State<DigerFormElemanlari> {
                 });
               },
               title: const Text("Adana"),
+              subtitle: const Text("Radio Subtitle"),
+              secondary: const Icon(Icons.map),
+            ),
+            RadioListTile<String>(
+              value: 'Samsun',
+              groupValue: sehir,
+              onChanged: (deger) {
+                setState(() {
+                  sehir = deger!;
+                  debugPrint("Seçilen değer : $deger");
+                });
+              },
+              title: const Text("Samsun"),
               subtitle: const Text("Radio Subtitle"),
               secondary: const Icon(Icons.map),
             ),
